@@ -32,8 +32,14 @@ for (let i = 0; i< images.length; i++) {
         displayedImage.setAttribute('alt', alt);
 
 
-    }
+    };
 }
 
-
 /* Wiring up the Darken/Lighten button */
+btn.onclick = function () {
+    if (overlay.style.display === 'block') {
+        overlay.style.display = 'none';
+    } else {
+        overlay.style.display = 'block';
+    }
+};
